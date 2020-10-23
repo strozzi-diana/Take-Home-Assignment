@@ -92,6 +92,20 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
+# Test Running
+
+1. In -bash terminal type 
+
+```bash
+$ docker ps
+```
+and locate a port number for your container. 
+
+2. Open VNC Viewer, type in a port number in the format `0.0.0.0:32778` and connect to a VNC Server (if asked for password, use 'secret').
+
+3. Run your test script.
+
+
 # Project Status
 
 This project is finished, more information will be given in TODO.md file.
