@@ -1,0 +1,205 @@
+{
+  "id": "7757fbba-603d-4993-b781-f84cb53d42ff",
+  "version": "2.0",
+  "name": "IPv4 Validation",
+  "url": "https://censys.io/ipv4",
+  "tests": [{
+    "id": "84765995-82e6-4c6b-bed7-6a686729e329",
+    "name": "Invalid IPv4",
+    "commands": [{
+      "id": "1216a6da-a14c-4093-a734-e7adfc363921",
+      "comment": "",
+      "command": "open",
+      "target": "/ipv4",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b04dd1fc-a0c3-467c-8209-85b2a675f889",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1420x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82e02d18-3afd-46c6-9f00-ec20d179f3cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab385247-f758-4e7d-85f9-67d59d15c7db",
+      "comment": "",
+      "command": "type",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "176.256.34.1"
+    }, {
+      "id": "a454fefa-9657-416b-a93f-76c6f8f0912b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "349e8125-bfa7-4ea7-82e0-e89c239d7e4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43d4641b-0fac-461c-b31f-300382ed2455",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div[2]/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Error 400. The value 176.256.34.1 is not a valid IPv4 address. If you believe this is an error on our part, please contact us.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50e62a53-fbf1-46e2-80ff-2bb465ad7dc1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer__copyright-notice:nth-child(2)",
+      "targets": [
+        ["css=.footer__copyright-notice:nth-child(2)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Need help? Email us at support@censys.io | API Documentation | Research Access')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fca8b3fb-8b92-415a-a6ed-323849ba1116",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer__copyright-notice:nth-child(2)",
+      "targets": [
+        ["css=.footer__copyright-notice:nth-child(2)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Need help? Email us at support@censys.io | API Documentation | Research Access')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c0951218-5aff-4924-8adf-bc2532ed6132",
+    "name": "Valid IPv4",
+    "commands": [{
+      "id": "3784c366-85f7-4c4a-bafe-5e0a13cc11ff",
+      "comment": "",
+      "command": "open",
+      "target": "https://censys.io/ipv4",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f35fd2cd-9e81-454e-8d69-c24e385f379b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1420x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b6c2a91-14f9-4adc-b215-53617f31451c",
+      "comment": "",
+      "command": "click",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a01ab82-7225-4590-ae24-6e68ccf5b32a",
+      "comment": "",
+      "command": "type",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "23.105.31.91"
+    }, {
+      "id": "ba1b3414-9150-472d-97df-c14dee86f731",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f7b6e68d-111b-4b98-9125-772e92dda365",
+      "comment": "",
+      "command": "click",
+      "target": "css=h4:nth-child(2)",
+      "targets": [
+        ["css=h4:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div[2]/div/div/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Basic Information')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8cb5f72-98fb-40cd-9925-916f317b1d04",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h4:nth-child(2)",
+      "targets": [
+        ["css=h4:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div[2]/div/div/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Basic Information')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bd2a69c6-75ba-46e0-a1e6-b1470e0685f2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["84765995-82e6-4c6b-bed7-6a686729e329"]
+  }],
+  "urls": ["https://censys.io/", "https://censys.io/ipv4"],
+  "plugins": []
+}
